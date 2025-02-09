@@ -1,22 +1,27 @@
 package viikko3.bookstore.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Book {
 
     private String title;
     private String author;
     private long publicationYear;
+    @Id
     private String isbn;
-    private float price;
+    private double price;
 
     public Book() {
         this.title = null;
         this.author = null;
         this.publicationYear = 0;
-        this.isbn = null;
+        this.isbn = "";
         this.price = 0;
     }
 
-    public Book(String title, String author, long publicationYear, String isbn, float price) {
+    public Book(String title, String author, long publicationYear, String isbn, double price) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
@@ -56,11 +61,11 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
