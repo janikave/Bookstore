@@ -36,9 +36,9 @@ public class BookstoreApplication {
 
 			log.info("save some sample books");
 
-			Book b4 = new Book("Parry Hotteri", "RK Jowling", 2004, "1700-0432-046", 31.50);
-			Book b5 = new Book("Harri Putteri", "WJ Rokling", 2005, "1700-0432-047", 32.50);
-			Book b6 = new Book("Harri Patteri", "JW Korling", 2006, "1700-0432-048", 33.50);
+			Book b4 = new Book("Parry Hotteri", "RK Jowling", 2004, "1700-0432-046", 31.50, c1);
+			Book b5 = new Book("Harri Putteri", "WJ Rokling", 2005, "1700-0432-047", 32.50, c2);
+			Book b6 = new Book("Harri Patteri", "JW Korling", 2006, "1700-0432-048", 33.50, c3);
 
 			brepository.save(b4);
 			brepository.save(b5);
