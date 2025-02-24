@@ -29,6 +29,7 @@ public class CategoryController {
     @GetMapping("/addcategory")
     public String addCategory(Model model) {
         model.addAttribute("category", new Category());
+        model.addAttribute("categories", crepository.findAll());
 
         return "addcategory";
     }

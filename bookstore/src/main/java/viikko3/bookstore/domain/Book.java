@@ -24,20 +24,24 @@ public class Book {
     private Category category;
 
     public Book() {
-        this.title = null;
-        this.author = null;
-        this.publicationYear = 0;
-        this.isbn = "";
-        this.price = 0;
     }
 
-    public Book(String title, String author, long publicationYear, String isbn, double price, Category category) {
+    public Book(String title, String author, long publicationYear, String isbn, double price,
+            Category category) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
         this.isbn = isbn;
         this.price = price;
         this.category = category;
+    }
+
+    public long getBookid() {
+        return bookid;
+    }
+
+    public void setBookid(long bookid) {
+        this.bookid = bookid;
     }
 
     public String getTitle() {
