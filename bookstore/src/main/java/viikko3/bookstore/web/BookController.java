@@ -52,4 +52,9 @@ public class BookController {
 
         return "redirect:/booklist";
     }
+
+    @GetMapping("/login")
+    public String loginPage() {
+        return "login";
+    }
 }
